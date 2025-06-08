@@ -112,8 +112,5 @@ DIVIDE([readmitted_count], CALCULATE([readmitted_count], REMOVEFILTERS(diabetic_
 
 ## 📷 Dashboard Preview
 
-(Include image here when uploading to GitHub)
+![Dashboard](Images/dashbdiabetes_readmission_dashboard_screenshotoard.png)
 
----
-
-Let me know if you would like to add a "Conclusion" or "Future Work" section!
