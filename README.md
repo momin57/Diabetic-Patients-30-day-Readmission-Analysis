@@ -129,3 +129,25 @@ DIVIDE([readmitted_count], CALCULATE([readmitted_count], REMOVEFILTERS(diabetic_
 ## 📁 Files Included
 
 - `readmitted_dashboard.pbix` – Power BI template with all visuals and KPIs
+
+
+---
+
+## 📁 Repository Structure
+
+```
+project_root/
+│
+├── Images/
+│   └── dashboard.png
+│
+├── raw_data/
+│   ├── diabetic_dataset.csv
+│   └── IDS_mapping.csv
+│
+├── cleaned_data/
+│   └── diabetic_data.csv
+│
+├── readmitted_dashboard.pbix
+└── README.md
+```
