@@ -39,15 +39,15 @@ This project analyzes hospital readmission patterns of diabetic patients within 
 
 Certain medications were classified as rare based on clinical obsolescence, withdrawal, or extremely limited usage. A new binary feature `rare_drugs_used` was created:
 
-- **Nateglinide** – Rarely used meglitinide with short action and lower efficacy
-- **Chlorpropamide** – Obsolete first-gen sulfonylurea with high hypoglycemia risk
-- **Acetohexamide** – Discontinued sulfonylurea with poor safety and efficacy
-- **Acarbose** – Postprandial control; causes GI side effects
-- **Miglitol** – Similar to acarbose; poorly tolerated
-- **Troglitazone** – Withdrawn due to liver toxicity
-- **Tolazamide** – Outdated first-gen drug
-- **Examide** – Not a real-world drug; synthetic entry
-- **Citoglipton** – Fictitious or experimental drug
+- **Nateglinide** – Rarely used meglitinide with short action and lower efficacy  
+- **Chlorpropamide** – Obsolete first-gen sulfonylurea with high hypoglycemia risk  
+- **Acetohexamide** – Discontinued sulfonylurea with poor safety and efficacy  
+- **Acarbose** – Postprandial control; causes GI side effects  
+- **Miglitol** – Similar to acarbose; poorly tolerated  
+- **Troglitazone** – Withdrawn due to liver toxicity  
+- **Tolazamide** – Outdated first-gen drug  
+- **Examide** – Not a real-world drug; synthetic entry  
+- **Citoglipton** – Fictitious or experimental drug  
 
 ---
 
@@ -89,23 +89,33 @@ DIVIDE([readmitted_count], CALCULATE([readmitted_count], REMOVEFILTERS(diabetic_
 
 ---
 
+## ❓ Key Questions Answered
+
+- How many diabetic patients were readmitted within 30 days?  
+- What is the 30-day readmission rate for diabetic patients?  
+- Which age group is most frequently readmitted?  
+- Which gender has more readmissions?  
+- How soon after discharge are patients getting readmitted?
+
+---
+
 ## 🔍 Key Insights from the Dashboard
 
-- **11.16%** of patients were readmitted within 30 days
-- **Female patients** had a slightly higher readmission count than males
-- **Senior age group** had the highest readmission count (5,571)
-- **Rare drug usage** was associated with only 115 readmissions out of 11,357
-- The **first week of hospital stay** had the majority of readmissions
-- **Internal Medicine** and **Family/General Practice** saw the highest readmission volumes
+- **11.16%** of patients were readmitted within 30 days  
+- **Female patients** had a slightly higher readmission count than males  
+- **Senior age group** had the highest readmission count (5,571)  
+- **Rare drug usage** was associated with only 115 readmissions out of 11,357  
+- The **first week of hospital stay** had the majority of readmissions  
+- **Internal Medicine** and **Family/General Practice** saw the highest readmission volumes  
 - Most medications remained in the "No" or "Steady" status range, with very few "Up" or "Down" trends
 
 ---
 
 ## 🌐 Tools Used
 
-- Power BI
-- Power Query
-- DAX (Data Analysis Expressions)
+- Power BI  
+- Power Query  
+- DAX (Data Analysis Expressions)  
 - Excel
 
 ---
@@ -114,3 +124,8 @@ DIVIDE([readmitted_count], CALCULATE([readmitted_count], REMOVEFILTERS(diabetic_
 
 ![Dashboard](Images/dashboard.png)
 
+---
+
+## 📁 Files Included
+
+- `readmitted_dashboard.pbix` – Power BI template with all visuals and KPIs
